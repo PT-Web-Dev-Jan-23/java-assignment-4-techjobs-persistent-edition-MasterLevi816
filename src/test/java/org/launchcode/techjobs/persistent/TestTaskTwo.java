@@ -4,6 +4,7 @@ import mockit.Expectations;
 import mockit.Mocked;
 import org.junit.jupiter.api.Test;
 import org.launchcode.techjobs.persistent.controllers.EmployerController;
+import org.launchcode.techjobs.persistent.controllers.SkillController;
 import org.launchcode.techjobs.persistent.models.Employer;
 import org.launchcode.techjobs.persistent.models.Skill;
 import org.launchcode.techjobs.persistent.models.data.EmployerRepository;
@@ -456,7 +457,7 @@ public class TestTaskTwo extends AbstractTest {
      * Verifies that SkillController.index is properly defined
      * */
 
-    /*
+
     @Test
     public void testSkillControllerIndexMethodDefinition (@Mocked SkillRepository skillRepository) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         Class skillControllerClass = getClassByName("controllers.SkillController");
@@ -501,7 +502,7 @@ public class TestTaskTwo extends AbstractTest {
      * Verify that processAddSkillForm saves a new skill to the database
      * */
 
-    /*
+
     @Test
     public void testNewSkillIsSaved (@Mocked SkillRepository skillRepository, @Mocked Errors errors) throws ClassNotFoundException, NoSuchMethodException, NoSuchFieldException, IllegalAccessException, InvocationTargetException {
         Class skillControllerClass = getClassByName("controllers.SkillController");
@@ -527,7 +528,7 @@ public class TestTaskTwo extends AbstractTest {
      * Verifies that displayViewSkill calls findById to retrieve an skill object
      * */
 
-    /*
+
     @Test
     public void testDisplayViewSkillCallsFindById (@Mocked SkillRepository skillRepository) throws ClassNotFoundException, NoSuchMethodException, NoSuchFieldException, IllegalAccessException, InvocationTargetException {
         Class skillControllerClass = getClassByName("controllers.SkillController");
@@ -544,7 +545,7 @@ public class TestTaskTwo extends AbstractTest {
         skillRepositoryField.set(skillController, skillRepository);
         displayViewSkillMethod.invoke(skillController, model, 1);
     }
-    */
+
 
     // --- END CONTROLLER TESTS --- //
 
